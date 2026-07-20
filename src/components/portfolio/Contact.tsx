@@ -3,8 +3,8 @@ import { Section } from "./Section";
 const CARDS = [
   {
     label: "Email",
-    value: "mehtadiya@gmail.com",
-    href: "mailto:mehtadiya@gmail.com",
+    value: "mehtadiya675@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=mehtadiya675@gmail.com",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <rect x="2" y="4" width="20" height="16" rx="2" />
@@ -79,16 +79,13 @@ export function Contact() {
 
       <div className="mt-10 text-center">
         <a
-          href="/resume.pdf"
-          download
-          className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-primary-foreground transition-all hover:scale-105 glow-ring"
-          style={{ background: "var(--gradient-primary)", backgroundSize: "200% 200%" }}
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" />
-          </svg>
-          Download Resume
-        </a>
+  href="/Diya_Mehta_BTech_CSE_2027_Resume.pdf"
+  download="Diya_Mehta_BTech_CSE_2027_Resume.pdf"
+  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-primary-foreground transition-all hover:scale-105 glow-ring"
+  style={{ background: "var(--gradient-primary)", backgroundSize: "200% 200%" }}
+>
+  Download Resume
+</a>
       </div>
     </Section>
   );

@@ -7,13 +7,15 @@ const PROJECTS = [
       "A full-stack AI-powered expense management platform with authentication, budget tracking, dashboards, a chatbot assistant, and voice-enabled expense entry powered by Whisper AI.",
     tech: ["React.js", "Node.js", "Express.js", "PostgreSQL", "FastAPI", "Whisper AI"],
     accent: "from-cyan-400/30 to-purple-500/30",
+    link: "https://youtu.be/kfvJWCyFEOc",
   },
   {
     title: "Asset Management System",
     description:
-      "Complete asset tracking and management for organizational assets — categories, allocations, audit records and secure backend APIs designed for real enterprise workflows.",
+      "Complete asset tracking and management for organizational assets — categories, allocations and secure backend APIs designed for real enterprise workflows.",
     tech: ["React.js", "Node.js", "Express.js", "MSSQL"],
     accent: "from-purple-500/30 to-pink-500/30",
+    link: "https://youtu.be/wqJ7Pw2k61k",
   },
   {
     title: "Jewellery Management / E-commerce",
@@ -21,6 +23,7 @@ const PROJECTS = [
       "A responsive jewellery e-commerce platform with rich product display, catalog management and a polished admin interface built on a modern UI foundation.",
     tech: ["React.js", "Node.js", "Express.js"],
     accent: "from-pink-500/30 to-cyan-400/30",
+    link: "https://youtu.be/LNpmobL_sYI",
   },
 ];
 
@@ -46,11 +49,23 @@ export function Projects() {
                 <span className="text-xs font-mono text-muted-foreground">
                   0{idx + 1} / 0{PROJECTS.length}
                 </span>
-                <span className="w-10 h-10 rounded-full glass flex items-center justify-center group-hover:rotate-45 transition-transform">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M7 17L17 7M9 7h8v8" />
-                  </svg>
-                </span>
+               <a
+  href={p.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-10 h-10 rounded-full glass flex items-center justify-center group-hover:rotate-45 transition-transform"
+>
+  <svg 
+    width="14" 
+    height="14" 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2"
+  >
+    <path d="M7 17L17 7M9 7h8v8" />
+  </svg>
+</a>
               </div>
               <h3 className="text-xl font-semibold font-display mb-3 group-hover:gradient-text transition-all">
                 {p.title}

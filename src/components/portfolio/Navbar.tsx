@@ -42,13 +42,7 @@ export function Navbar() {
             </li>
           ))}
         </ul>
-        <a
-          href="/resume.pdf"
-          download
-          className="hidden md:inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium glass glass-hover text-foreground"
-        >
-          Resume
-        </a>
+         
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden p-2 text-foreground"

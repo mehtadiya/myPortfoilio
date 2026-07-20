@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
+import myPhoto from "../../assets/myphoto.jpg";
 
 const ROLES = [
   "Full Stack Developer",
@@ -108,29 +109,21 @@ export function Hero() {
         </div>
 
         <div className="relative hidden lg:block animate-fade-up [animation-delay:200ms]">
-          <div className="relative aspect-square max-w-md ml-auto">
-            <div className="absolute inset-0 rounded-full" style={{ background: "var(--gradient-glow)" }} />
-            <div className="absolute inset-8 rounded-full glass glow-ring animate-float flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-7xl font-bold gradient-text font-display">AI</div>
-                <div className="mt-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">Powered Stack</div>
-              </div>
-            </div>
-            {["React", "Node", "FastAPI", "Whisper"].map((tag, idx) => (
-              <div
-                key={tag}
-                className="absolute glass px-3 py-1.5 rounded-full text-xs font-medium animate-float"
-                style={{
-                  top: `${[5, 20, 70, 80][idx]}%`,
-                  left: `${[70, 5, 0, 75][idx]}%`,
-                  animationDelay: `${idx * 0.6}s`,
-                }}
-              >
-                {tag}
-              </div>
-            ))}
-          </div>
-        </div>
+  <div className="relative aspect-square max-w-md ml-auto">
+    <div
+      className="absolute inset-0 rounded-full"
+      style={{ background: "var(--gradient-glow)" }}
+    />
+
+    <div className="absolute inset-8 rounded-full glass glow-ring animate-float overflow-hidden">
+      <img
+        src={myPhoto}
+        alt="Diya Mehta"
+        className="w-full h-full object-cover rounded-full"
+      />
+    </div>
+  </div>
+</div>
       </div>
 
       <a
